@@ -13,172 +13,174 @@ To this
 ```mermaid
     flowchart BT
     node2_0(["Starting"])
-    node7_10(["INT"])
-    node12_29(["type_specifier"])
-    node19_27(["declaration_specifiers"])
-    node23_1(["IDENTIFIER"])
-    node30_35(["direct_declarator"])
-    node34_68(["'('"])
-    node39_10(["INT"])
-    node44_29(["type_specifier"])
-    node51_157(["declaration_specifiers"])
-    node55_1(["IDENTIFIER"])
-    node62_35(["direct_declarator"])
-    node68_248(["declarator"])
-    node74_160(["parameter_declaration"])
-    node79_159(["parameter_list"])
-    node85_158(["parameter_type_list"])
-    node89_252(["')'"])
-    node97_35(["direct_declarator"])
-    node104_57(["declarator"])
-    node108_63(["'{'"])
-    node113_135(["RETURN"])
-    node118_74(["IDENTIFIER"])
-    node123_88(["primary_expression"])
-    node128_89(["postfix_expression"])
-    node135_138(["unary_expression"])
-    node141_92(["cast_expression"])
-    node146_93(["multiplicative_expression"])
-    node150_179(["'*'"])
-    node155_74(["IDENTIFIER"])
-    node160_88(["primary_expression"])
-    node165_89(["postfix_expression"])
-    node170_175(["'('"])
-    node175_74(["IDENTIFIER"])
-    node180_88(["primary_expression"])
-    node185_89(["postfix_expression"])
-    node192_138(["unary_expression"])
-    node198_92(["cast_expression"])
-    node203_93(["multiplicative_expression"])
-    node209_94(["additive_expression"])
-    node213_183(["'-'"])
-    node218_75(["CONSTANT"])
-    node223_88(["primary_expression"])
-    node228_89(["postfix_expression"])
-    node235_90(["unary_expression"])
-    node240_92(["cast_expression"])
-    node245_273(["multiplicative_expression"])
-    node253_94(["additive_expression"])
-    node259_95(["shift_expression"])
-    node265_96(["relational_expression"])
-    node271_97(["equality_expression"])
-    node277_98(["and_expression"])
-    node283_99(["exclusive_or_expression"])
-    node289_100(["inclusive_or_expression"])
-    node295_101(["logical_and_expression"])
-    node301_102(["logical_or_expression"])
-    node307_139(["conditional_expression"])
-    node312_266(["assignment_expression"])
-    node317_265(["argument_expression_list"])
-    node321_323(["')'"])
-    node329_89(["postfix_expression"])
-    node336_90(["unary_expression"])
-    node341_269(["cast_expression"])
-    node348_93(["multiplicative_expression"])
-    node354_94(["additive_expression"])
-    node360_95(["shift_expression"])
-    node366_96(["relational_expression"])
-    node372_97(["equality_expression"])
-    node378_98(["and_expression"])
-    node384_99(["exclusive_or_expression"])
-    node390_100(["inclusive_or_expression"])
-    node396_101(["logical_and_expression"])
-    node402_102(["logical_or_expression"])
-    node408_139(["conditional_expression"])
-    node413_140(["assignment_expression"])
-    node418_229(["expression"])
-    node422_307(["';'"])
-    node429_151(["jump_statement"])
-    node434_143(["statement"])
-    node439_147(["code_block_lists"])
-    node444_146(["list_of_lists"])
-    node449_244(["'}'"])
-    node456_116(["compound_statement"])
-    node463_43(["function_definition"])
-    node468_42(["external_declaration"])
-    node473_38(["translation_unit"])
-    node7_10 --> node12_29
-    node12_29 --> node19_27
-    node19_27 --> node463_43
-    node23_1 --> node30_35
-    node30_35 --> node97_35
-    node34_68 --> node97_35
-    node39_10 --> node44_29
-    node44_29 --> node51_157
-    node51_157 --> node74_160
-    node55_1 --> node62_35
-    node62_35 --> node68_248
-    node68_248 --> node74_160
-    node74_160 --> node79_159
-    node79_159 --> node85_158
-    node85_158 --> node97_35
-    node89_252 --> node97_35
-    node97_35 --> node104_57
-    node104_57 --> node463_43
-    node108_63 --> node456_116
-    node113_135 --> node429_151
-    node118_74 --> node123_88
-    node123_88 --> node128_89
-    node128_89 --> node135_138
-    node135_138 --> node141_92
-    node141_92 --> node146_93
-    node146_93 --> node348_93
-    node150_179 --> node348_93
-    node155_74 --> node160_88
-    node160_88 --> node165_89
-    node165_89 --> node329_89
-    node170_175 --> node329_89
-    node175_74 --> node180_88
-    node180_88 --> node185_89
-    node185_89 --> node192_138
-    node192_138 --> node198_92
-    node198_92 --> node203_93
-    node203_93 --> node209_94
-    node209_94 --> node253_94
-    node213_183 --> node253_94
-    node218_75 --> node223_88
-    node223_88 --> node228_89
-    node228_89 --> node235_90
-    node235_90 --> node240_92
-    node240_92 --> node245_273
-    node245_273 --> node253_94
-    node253_94 --> node259_95
-    node259_95 --> node265_96
-    node265_96 --> node271_97
-    node271_97 --> node277_98
-    node277_98 --> node283_99
-    node283_99 --> node289_100
-    node289_100 --> node295_101
-    node295_101 --> node301_102
-    node301_102 --> node307_139
-    node307_139 --> node312_266
-    node312_266 --> node317_265
-    node317_265 --> node329_89
-    node321_323 --> node329_89
-    node329_89 --> node336_90
-    node336_90 --> node341_269
-    node341_269 --> node348_93
-    node348_93 --> node354_94
-    node354_94 --> node360_95
-    node360_95 --> node366_96
-    node366_96 --> node372_97
-    node372_97 --> node378_98
-    node378_98 --> node384_99
-    node384_99 --> node390_100
-    node390_100 --> node396_101
-    node396_101 --> node402_102
-    node402_102 --> node408_139
-    node408_139 --> node413_140
-    node413_140 --> node418_229
-    node418_229 --> node429_151
-    node422_307 --> node429_151
-    node429_151 --> node434_143
-    node434_143 --> node439_147
-    node439_147 --> node444_146
-    node444_146 --> node456_116
-    node449_244 --> node456_116
-    node456_116 --> node463_43
-    node463_43 --> node468_42
-    node468_42 --> node473_38
-    node473_38 --> node2_0
+    node7_14(["INT"])
+    node12_34(["type_specifier"])
+    node19_32(["declaration_specifiers"])
+    node23_51(["IDENTIFIER"])
+    node28_58(["direct_declarator"])
+    node33_131(["'('"])
+    node38_14(["INT"])
+    node43_34(["type_specifier"])
+    node50_229(["declaration_specifiers"])
+    node54_51(["IDENTIFIER"])
+    node59_58(["direct_declarator"])
+    node66_332(["declarator"])
+    node72_232(["parameter_declaration"])
+    node77_231(["parameter_list"])
+    node83_230(["parameter_type_list"])
+    node87_335(["')'"])
+    node95_58(["direct_declarator"])
+    node102_57(["declarator"])
+    node106_125(["'{'"])
+    node111_208(["RETURN"])
+    node116_74(["IDENTIFIER"])
+    node121_92(["primary_expression"])
+    node126_96(["postfix_expression"])
+    node133_150(["unary_expression"])
+    node139_99(["cast_expression"])
+    node144_100(["multiplicative_expression"])
+    node148_162(["'*'"])
+    node153_74(["IDENTIFIER"])
+    node158_92(["primary_expression"])
+    node163_96(["postfix_expression"])
+    node168_158(["'('"])
+    node173_74(["IDENTIFIER"])
+    node178_92(["primary_expression"])
+    node183_96(["postfix_expression"])
+    node190_150(["unary_expression"])
+    node196_99(["cast_expression"])
+    node201_100(["multiplicative_expression"])
+    node207_101(["additive_expression"])
+    node211_166(["'-'"])
+    node216_75(["I_CONSTANT"])
+    node221_93(["constant"])
+    node226_92(["primary_expression"])
+    node231_96(["postfix_expression"])
+    node238_97(["unary_expression"])
+    node243_99(["cast_expression"])
+    node248_281(["multiplicative_expression"])
+    node256_101(["additive_expression"])
+    node262_102(["shift_expression"])
+    node268_103(["relational_expression"])
+    node274_104(["equality_expression"])
+    node280_105(["and_expression"])
+    node286_106(["exclusive_or_expression"])
+    node292_107(["inclusive_or_expression"])
+    node298_108(["logical_and_expression"])
+    node304_109(["logical_or_expression"])
+    node310_151(["conditional_expression"])
+    node315_274(["assignment_expression"])
+    node320_273(["argument_expression_list"])
+    node324_361(["')'"])
+    node332_96(["postfix_expression"])
+    node339_97(["unary_expression"])
+    node344_277(["cast_expression"])
+    node351_100(["multiplicative_expression"])
+    node357_101(["additive_expression"])
+    node363_102(["shift_expression"])
+    node369_103(["relational_expression"])
+    node375_104(["equality_expression"])
+    node381_105(["and_expression"])
+    node387_106(["exclusive_or_expression"])
+    node393_107(["inclusive_or_expression"])
+    node399_108(["logical_and_expression"])
+    node405_109(["logical_or_expression"])
+    node411_151(["conditional_expression"])
+    node416_152(["assignment_expression"])
+    node421_320(["expression"])
+    node425_392(["';'"])
+    node432_221(["jump_statement"])
+    node437_213(["statement"])
+    node442_217(["block_item"])
+    node447_216(["block_item_list"])
+    node452_322(["'}'"])
+    node459_129(["compound_statement"])
+    node466_45(["function_definition"])
+    node471_44(["external_declaration"])
+    node476_43(["translation_unit"])
+    node7_14 --> node12_34
+    node12_34 --> node19_32
+    node19_32 --> node466_45
+    node23_51 --> node28_58
+    node28_58 --> node95_58
+    node33_131 --> node95_58
+    node38_14 --> node43_34
+    node43_34 --> node50_229
+    node50_229 --> node72_232
+    node54_51 --> node59_58
+    node59_58 --> node66_332
+    node66_332 --> node72_232
+    node72_232 --> node77_231
+    node77_231 --> node83_230
+    node83_230 --> node95_58
+    node87_335 --> node95_58
+    node95_58 --> node102_57
+    node102_57 --> node466_45
+    node106_125 --> node459_129
+    node111_208 --> node432_221
+    node116_74 --> node121_92
+    node121_92 --> node126_96
+    node126_96 --> node133_150
+    node133_150 --> node139_99
+    node139_99 --> node144_100
+    node144_100 --> node351_100
+    node148_162 --> node351_100
+    node153_74 --> node158_92
+    node158_92 --> node163_96
+    node163_96 --> node332_96
+    node168_158 --> node332_96
+    node173_74 --> node178_92
+    node178_92 --> node183_96
+    node183_96 --> node190_150
+    node190_150 --> node196_99
+    node196_99 --> node201_100
+    node201_100 --> node207_101
+    node207_101 --> node256_101
+    node211_166 --> node256_101
+    node216_75 --> node221_93
+    node221_93 --> node226_92
+    node226_92 --> node231_96
+    node231_96 --> node238_97
+    node238_97 --> node243_99
+    node243_99 --> node248_281
+    node248_281 --> node256_101
+    node256_101 --> node262_102
+    node262_102 --> node268_103
+    node268_103 --> node274_104
+    node274_104 --> node280_105
+    node280_105 --> node286_106
+    node286_106 --> node292_107
+    node292_107 --> node298_108
+    node298_108 --> node304_109
+    node304_109 --> node310_151
+    node310_151 --> node315_274
+    node315_274 --> node320_273
+    node320_273 --> node332_96
+    node324_361 --> node332_96
+    node332_96 --> node339_97
+    node339_97 --> node344_277
+    node344_277 --> node351_100
+    node351_100 --> node357_101
+    node357_101 --> node363_102
+    node363_102 --> node369_103
+    node369_103 --> node375_104
+    node375_104 --> node381_105
+    node381_105 --> node387_106
+    node387_106 --> node393_107
+    node393_107 --> node399_108
+    node399_108 --> node405_109
+    node405_109 --> node411_151
+    node411_151 --> node416_152
+    node416_152 --> node421_320
+    node421_320 --> node432_221
+    node425_392 --> node432_221
+    node432_221 --> node437_213
+    node437_213 --> node442_217
+    node442_217 --> node447_216
+    node447_216 --> node459_129
+    node452_322 --> node459_129
+    node459_129 --> node466_45
+    node466_45 --> node471_44
+    node471_44 --> node476_43
+    node476_43 --> node2_0
 ```
