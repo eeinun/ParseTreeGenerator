@@ -33,16 +33,6 @@ class Graph:
     def get_neighbors(self, vertex_id):
         return self.edges.get(vertex_id, [])
 
-    def display(self):
-        print(self.vertices)
-        print("Vertices:")
-        for vertex_id, vertex in self.vertices.items():
-            print(vertex)
-        print("\nEdges:")
-        for from_vertex_id, to_vertices in self.edges.items():
-            for to_vertex_id in to_vertices:
-                print(f"{self.vertices[from_vertex_id]} -> {self.vertices[to_vertex_id]}")
-
     def mm_display(self):
         mermaid_markdown = ""
         mermaid_markdown += "    flowchart BT\n"
@@ -56,14 +46,16 @@ class Graph:
         print(f"\n\nhttps://mermaid.ink/img/{encoded.decode()}")
 
 
-g = Graph()
-stk = ["0-0"]
-input_path = input("Enter c file path").replace('\\', '\\\\')
+input_path = input("Enter path of C file (ex. data\\test.c)\n>> ").replace('\\', '\\\\')
 data = run("yacc < data\\test.c", capture_output=True, shell=True, text=True)
 content = data.stderr.split('\n')
+g = Graph()
+
+stk = ["0-0"]
 state_num, state_token = '', ''
 state_map = {}
-print("mapping states")
+
+# mapping states
 for i in range(1, len(content)):
     if len(content[i]) < 1:
         continue
@@ -74,6 +66,7 @@ for i in range(1, len(content)):
             continue
         state_map[state_num] = content[i - 1].split()[-2]
 
+# derive a tree
 vid, token = '', ''
 tracking_stack = []
 i = 0
@@ -95,6 +88,5 @@ while i < len(content):
     tracking_stack.append(top_vid)
     i += 1
 g.add_edge(tracking_stack.pop(), tracking_stack.pop())
-
 
 g.mm_display()
